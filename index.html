@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">BANCO DEL ZULIA</h1>
+          <p id="description" class="description text-center">
+            Agradecemos nos compartas tu opinion referente a nuestros servicios
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Ingrese su nombre y apellido"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Correo</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Ingrese su correo"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Telefono</label
+            >
+            <input
+              type="number"
+              name="Telefono"
+              id="number"
+              class="form-control"
+              placeholder="Telefono"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <p>¿Que producto le interesa de nuestro Banco?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Seleccione una opcion</option>
+              <option value="cuenta">Cuenta ahorros o corriente</option>
+              <option value="tarjetas">Tarjeta de credito</option>
+              <option value="credito">Micro Credito</option>
+              <option value="hipoteca">Credito Vivienda</option>
+              <option value="Carro">Credito Vehiculo</option>
+              <option value="Otro">Otros</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>¿En que horario lo podemos contactar?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="horario"
+                type="radio"
+                class="input-radio"
+                checked
+              />8am-12m</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="horario"
+                type="radio"
+                class="input-radio"
+              />1pm-3pm</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="horario"
+                type="radio"
+                class="input-radio"
+              />3pm-6pm</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              ¿Has solicitado anteriormente algun producto con nuestro Banco?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Seleccione una opción</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              ¿Como se entero de nosotros?
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="redes"
+                type="checkbox"
+                class="input-checkbox"
+              />Redes Sociales</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="Periodico"
+                type="checkbox"
+                class="input-checkbox"
+              />Periodico</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Recomendacion"
+                type="checkbox"
+                class="input-checkbox"
+              />Recomendo un familiar o amigo</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Publicidad"
+                type="checkbox"
+                class="input-checkbox"
+              />Volantes</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="banco"
+                type="checkbox"
+                class="input-checkbox"
+              />Personal del Banco</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="tv"
+                type="checkbox"
+                class="input-checkbox"
+              />Television</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Otro"
+                type="checkbox"
+                class="input-checkbox"
+              />Otro</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>¿Desea dejarnos algun comentario o sugerencia?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Ingrese su comentario aqui."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>   
+</body>
+</html>
